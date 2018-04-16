@@ -73,6 +73,8 @@ class EmployeeController extends Controller
     {             
         $city_lists = City::pluck('city','id');
         $position_lists = Position::pluck('position','id');
+
+      
         return view('back.employees.edit', compact('employee','city_lists','position_lists'));
     }
 

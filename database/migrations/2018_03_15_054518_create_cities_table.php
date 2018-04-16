@@ -14,7 +14,7 @@ class CreateCitiesTable extends Migration
     public function up()
     {
         Schema::create('cities', function (Blueprint $table) {
-            $table->increments('id')->nullable();->nullable();
+            $table->increments('id');
             $table->string('city', 100)->nullable();
             $table->timestamps();
             $table->timestamp('deleted_at')->nullable();
